@@ -10,6 +10,8 @@ public class Program {
 
 		VendedorDao vendedorDao = DaoFactory.criaVendedorDao();
 
+		System.out.println("=== TEST 1: vendedor procuraPorId ===");
+
 		Vendedor vendedor = vendedorDao.procuraPorId(3);
 
 		System.out.println(vendedor);
