@@ -19,7 +19,13 @@ public class Program {
 
 		System.out.println("\n=== TEST 2: vendedor procuraPorDepartamento ===");
 		Departamento departamento = new Departamento(2, null);
-		List<Vendedor> lista = vendedorDao.achaPorDepartamento(departamento);
+		List<Vendedor> lista = vendedorDao.procuraPorDepartamento(departamento);
+		for (Vendedor obj : lista) {
+			System.out.println(obj);
+		}
+
+		System.out.println("\n=== TEST 3: vendedor achaTodos ===");
+		lista = vendedorDao.achaTodos();
 		for (Vendedor obj : lista) {
 			System.out.println(obj);
 		}

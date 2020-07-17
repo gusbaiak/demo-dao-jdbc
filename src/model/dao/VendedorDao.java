@@ -17,6 +17,6 @@ public interface VendedorDao {
 
 	List<Vendedor> achaTodos();
 
-	List<Vendedor> achaPorDepartamento(Departamento departamento);
+	List<Vendedor> procuraPorDepartamento(Departamento departamento);
 
 }
